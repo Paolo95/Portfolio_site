@@ -48,10 +48,10 @@ export const Projects = () =>{
                                     <Nav.Link eventKey="first">Completati</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">In lavorazione</Nav.Link>
+                                    <Nav.Link eventKey="second">In corso</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">Idee</Nav.Link>
+                                    <Nav.Link eventKey="third">Nuove idee</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>

@@ -33,10 +33,11 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
-                            <h2>
+                    <h2>
                                 Competenze
                             </h2>
+                        <div className="skill-bx">
+                            
                             <p>I progetti che sviluppo sono:</p>
                             <Carousel responsive={responsive} infinite={true} className='skills-slider'>
                                 <div className='item'>
