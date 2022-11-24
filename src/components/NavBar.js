@@ -52,7 +52,7 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt="navIcon1" /></a>
+                    <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt="linkedIn" /></a>
                 </div>
                 <button className='vvd' onClick={() => console.log('connect')}><span>Contattami!</span></button>
             </span>
