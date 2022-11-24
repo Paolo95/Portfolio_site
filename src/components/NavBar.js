@@ -54,7 +54,7 @@ export const NavBar = () => {
                 <div className='social-icon'>
                     <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt="linkedIn" /></a>
                 </div>
-                <button className='vvd' onClick={() => console.log('connect')}><span>Contattami!</span></button>
+                <a href="#contact"><button className='vvd' onClick={() => console.log('connect')}><span>Contattami!</span></button></a> 
             </span>
             </Navbar.Collapse>
         </Container>

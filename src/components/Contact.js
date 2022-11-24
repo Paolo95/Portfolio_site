@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 
 export const Contact = () => {
@@ -44,7 +44,7 @@ export const Contact = () => {
     };
 
     return (
-        <section className="contact" id="connect">
+        <section className="contact" id="contact">
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
