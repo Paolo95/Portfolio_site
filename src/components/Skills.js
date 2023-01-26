@@ -5,6 +5,7 @@ import meter1 from "../assets/img/meter1.svg"
 import meter2 from "../assets/img/meter2.svg"
 import meter3 from "../assets/img/meter3.svg"
 import colorSharp from '../assets/img/color-sharp.png'
+import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
 
@@ -35,9 +36,14 @@ export const Skills = () => {
                     <Col>
                         
                         <div className="skill-bx">
-                        <h2>
-                            Competenze
-                        </h2>
+                            <TrackVisibility>
+                                {({ isVisible }) => 
+                                    <div className={isVisible ? "animate__animated animate__headShake" : ""}>
+                                        <h2>Competenze</h2>
+                                    </div>
+                                }
+                            </TrackVisibility>
+                        
                             <p>I progetti che sviluppo sono:</p>
                             <Carousel responsive={responsive} infinite={true} className='skills-slider'>
                                 <div className='item'>

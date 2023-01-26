@@ -43,7 +43,7 @@ export const Projects = () =>{
                     <Col>
                         <TrackVisibility>
                         {({ isVisible })=>
-                            <div className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                            <div className={isVisible ? "animate__animated animate__flipInX" : ""}>
                                 <h2>Progetti</h2>
                                 <p></p>
                             </div>}

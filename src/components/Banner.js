@@ -57,7 +57,10 @@ export const Banner = () => {
                             <p>Realizzo AR app in Unity, siti web con React e app per Android e iOS con React Native.<br/><br/>
                                 Scorri in basso per vedere il mio portfolio!
                             </p>
-                            <button onClick={() => console.log('connect')}> Contattami ora! <ArrowRightCircle size={25}/></button>
+                            <a href="#contact">
+                                <button>Contattami ora! <ArrowRightCircle size={25}/></button>
+                            </a>
+                           
                         </div>}
                         </TrackVisibility>
                     </Col>
