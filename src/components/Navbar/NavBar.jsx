@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg'
-import navIcon1 from '../assets/img/nav-icon1.svg'
+import logo from '../../assets/img/logo.svg'
+import navIcon1 from '../../assets/img/nav-icon1.svg'
+import './navbar.css'
 
-export const NavBar = () => {
+const NavBar = () => {
     
     // useState imposta una variabile di stato activeLink e una funzione setActiveLink che lo aggiorna
 
@@ -61,3 +62,5 @@ export const NavBar = () => {
         </Navbar>
     );
 }
+
+export default NavBar;

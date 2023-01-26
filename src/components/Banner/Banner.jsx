@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../../assets/img/header-img.svg"
 import 'animate.css'
+import './banner.css'
 import TrackVisibility from "react-on-screen"
 
-export const Banner = () => {
+const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -52,7 +53,7 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({ isVisible })=>
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                            <span className="tagline"> Benvenuto sul mio portfolio personale!</span>
+                            <span className="tagline"> Benvenuto nel mio portfolio personale!</span>
                             <h1>{'Ciao! Sono Paolo, '}<span className="wrap">{text} </span></h1>
                             <p>Realizzo AR app in Unity, siti web con React e app per Android e iOS con React Native.<br/><br/>
                                 Scorri in basso per vedere il mio portfolio!
@@ -72,3 +73,5 @@ export const Banner = () => {
         </section>
     )
 }
+
+export default Banner

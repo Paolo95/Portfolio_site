@@ -1,0 +1,43 @@
+/************ Contact Css ************/
+
+.contact{
+    padding: 160px 0 80px 0;
+  }
+  
+  .contact h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+  }
+  
+  .contact input{
+    border-radius: 15px;
+    height: 60px;
+    width: 320px;
+    padding: 20px;
+    border-color: aliceblue;
+    border-width: 1px;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+  
+  .contact textarea{
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    border-color: aliceblue;
+    border-width: 1px;
+    margin-bottom: 5px;
+    background-color: transparent;
+  }
+  
+  .contact button{
+    background-color: #4A2FBD;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+  }
+  

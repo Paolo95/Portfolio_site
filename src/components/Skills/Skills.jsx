@@ -1,13 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
-import colorSharp from '../assets/img/color-sharp.png'
+import meter1 from "../../assets/img/meter1.svg"
+import meter2 from "../../assets/img/meter2.svg"
+import meter3 from "../../assets/img/meter3.svg"
+import colorSharp from '../../assets/img/color-sharp.png'
 import TrackVisibility from "react-on-screen";
+import './skills.css'
 
-export const Skills = () => {
+const Skills = () => {
 
     const responsive = {
         superLargeDesktop: {
@@ -71,3 +72,5 @@ export const Skills = () => {
         </section>
       )
 }
+
+export default Skills;

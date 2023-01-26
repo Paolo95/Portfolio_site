@@ -1,8 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from '../assets/img/nav-icon1.svg'
+import logo from "../../assets/img/logo.svg";
+import navIcon1 from '../../assets/img/nav-icon1.svg'
+import './footer.css'
 
-export const Footer = () =>{
+const Footer = () =>{
     return (
         <footer className="footer">
             <Container>
@@ -21,3 +22,5 @@ export const Footer = () =>{
         </footer>
     )
 }
+
+export default Footer;
