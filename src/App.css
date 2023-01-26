@@ -67,6 +67,10 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+section{
+  height: 100vh;
+}
+
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
