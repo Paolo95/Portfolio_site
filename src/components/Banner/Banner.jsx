@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { ArrowRightCircle } from "react-bootstrap-icons"
+import { ArrowRightCircle, ArrowDownCircle} from "react-bootstrap-icons"
 import headerImg from "../../assets/img/logo_transparent.png"
 import 'animate.css'
 import './banner.css'
@@ -53,7 +53,10 @@ const Banner = () => {
                         <TrackVisibility>
                         {({ isVisible })=>
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                            <h1>{'Ciao! Sono Paolo, '}<span className="wrap">{text} </span></h1>
+                            <div className="banner-animation">
+                                <h1>{'Ciao! Sono Paolo, '}<span className="wrap">{text} </span></h1>
+                            </div>
+                            
                             <p>Realizzo AR app in Unity, siti web con React e app per Android e iOS con React Native.<br/><br/>
                                 Scorri in basso per vedere il mio portfolio!
                             </p>
@@ -67,6 +70,17 @@ const Banner = () => {
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Heading"/>
                     </Col>
+                </Row>
+                <Row className="align-items-center">
+                <TrackVisibility>
+                            {({ isVisible }) => 
+                                <div className={isVisible ? "animate__animated animate__bounce animate__infinite animate__slow" : ""}>
+                                    <Row className="align-items-center">
+                                        <ArrowDownCircle size={30} className="arrow_down"/>
+                                    </Row>
+                                </div>
+                            }
+                        </TrackVisibility>  
                 </Row>
             </Container>
         </section>

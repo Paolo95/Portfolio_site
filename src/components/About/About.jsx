@@ -5,7 +5,9 @@ import { Award, People, FolderCheck } from 'react-bootstrap-icons';
 
 const About = () => {
   return (
-    <section className='about' id='about'>
+    <section className='about'>
+        <div className='gap' id='about'>
+        </div>
         <h2>Chi sono</h2>
 
         <div className="container about-container">
@@ -41,6 +43,8 @@ const About = () => {
             </div>
         </div>
     </section>
+    
+    
   )
 }
 
