@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Nav from './components/Nav/Nav';
+import About from './components/About/About';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <NavBar />
       <Banner />
       <Nav />
+      <About />
       <Skills />
       <Projects />
       <Contact />

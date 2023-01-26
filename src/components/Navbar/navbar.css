@@ -9,7 +9,7 @@ nav.navbar {
   }
   nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: #121212;
+    background-color: rgb(43, 65, 185);
   }
   nav.navbar a.navbar-brand {
       width: 9%;
@@ -21,11 +21,20 @@ nav.navbar {
     padding: 0 25px;
     font-size: 18px;
     opacity: 0.75;
+    transition: 150ms ease-in-out;
   }
+
+  nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+  nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+      opacity: 1;
+      color: #5CE1E6!important;
+  }
+
   nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
       opacity: 1;
   }
+
   span.navbar-text {
       display: flex;
       align-items: center;
@@ -51,7 +60,7 @@ nav.navbar {
       width: 42px;
       height: 42px;
       position: absolute;
-      background-color: #ffffff;
+      background-color: #5CE1E6;
       border-radius: 50%;
       transform: scale(0);
       transition: 0.3s ease-in-out;
@@ -86,7 +95,7 @@ nav.navbar {
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: #5CE1E6;
     left: 0;
     top: 0;
     z-index: -1;
@@ -145,4 +154,11 @@ nav.navbar {
   }
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       border-color: transparent;
+  }
+
+  @media screen and (max-width: 390px) and (max-height: 844px){
+
+    .navbar{
+        background-color: rgb(43, 65, 185);
+    }   
   }

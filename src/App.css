@@ -22,6 +22,21 @@
   box-sizing: border-box;
 }
 
+:root{
+  --color-bg: #000E2C;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-lightblue: #327987;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -31,9 +46,11 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  background: var(--color-bg)!important;
+  background-image: url('./assets/img/simple-dashed.png')!important;
+  background-position: top center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,48 +88,6 @@ section{
   height: 100vh;
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
-}
-
-p.success {
-	color: green;
-}
-
-p.danger {
-	color: red;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 428px) {
-  .project .nav.nav-pills .nav-link {
-    background-color: transparent;
-    border-radius: 0;
-    padding-top: 20px;
-    color: #fff;
-    width: 100%;
-    font-size: 11px;
-    letter-spacing: 0.8px;
-    font-weight: 500;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    text-align: center;
-    z-index: 0;
-    height: 5em;
-  }
-}
 .project .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
@@ -193,4 +168,36 @@ p.danger {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px){
+
+  section{
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .project .nav.nav-pills .nav-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding-top: 20px;
+    color: #fff;
+    width: 100%;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+    height: 5em;
+  }
 }
