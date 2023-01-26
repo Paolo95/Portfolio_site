@@ -65,6 +65,7 @@ p, a, li, button, ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  list-style-type: none;
 }
 
 a:hover {

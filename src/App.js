@@ -1,12 +1,12 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from "./components/Navbar/NavBar"
 import Banner from './components/Banner/Banner'
-import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
+import Services from './components/Services/Services';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Banner />
       <About />
       <Experience />
-      <Projects />
+      <Services />
       <Contact />
       <Footer />
     </div>
