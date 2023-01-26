@@ -11,7 +11,7 @@
     line-height: 1;
     margin-bottom: 20px;
     display: block;
-    color: #5CE1E6;
+    color: var(--color-primary);
   }
 
   .banner .banner-animation{
@@ -42,7 +42,7 @@
   }
   .banner button:hover svg {
     margin-left: 25px;
-    color: #5CE1E6;
+    color: var(--color-primary);
   }
   .banner img {
     animation: zoom-in-zoom-out 3s ease infinite;
@@ -79,11 +79,23 @@
       line-height: 1;
       margin-bottom: 20px;
       display: block;
-      color: #5CE1E6;
+      color: var(--color-primary);
     }
 
     .banner .banner-animation{
       height: 180px;
+    } 
+
+    .banner .arrow_down{
+      display: none;
+    }
+   
+  }
+
+  @media screen and (max-width: 1024px) {
+
+    .banner .banner-animation{
+      height: 250px;
     } 
 
     .banner .arrow_down{

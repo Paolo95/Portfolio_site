@@ -9,7 +9,7 @@
     margin-bottom: 60px;
     font-weight: 600;
     font-size: 40px;
-    color: #5CE1E6;
+    color: var(--color-primary);
 }
 
 .about-me{

@@ -27,7 +27,7 @@ nav.navbar {
   nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
       opacity: 1;
-      color: #5CE1E6!important;
+      color: var(--color-primary)!important;
   }
 
   nav.navbar .navbar-nav a.nav-link.navbar-link:hover,

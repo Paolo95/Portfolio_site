@@ -48,8 +48,8 @@ const NavBar = () => {
                                 onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                 <Nav.Link href="#about" data-to-scrollspy-id="about" className={activeLink === 'about' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('about')}>Chi sono</Nav.Link>
-                <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : "navbar-link"} 
-                                onClick={() => onUpdateActiveLink('skills')}>Competenze</Nav.Link>
+                <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : "navbar-link"} 
+                                onClick={() => onUpdateActiveLink('experience')}>Competenze</Nav.Link>
                 <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('projects')}>Progetti</Nav.Link>
             </Nav>
