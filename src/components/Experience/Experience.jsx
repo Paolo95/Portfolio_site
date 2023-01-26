@@ -7,7 +7,8 @@ const Experience = () => {
     <section className='experience'>
         <div className='gap' id='experience'>
         </div>
-        <h2>Le competenze che ho</h2>
+        
+        <h2>Le mie competenze</h2>
 
         <div className="container experience-container">
             <div className="experience-fullstack">
