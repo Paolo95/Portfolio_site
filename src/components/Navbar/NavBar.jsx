@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav} from 'react-bootstrap';
 import logo from '../../assets/img/logo_2_transparent.png'
 import navIcon1 from '../../assets/img/nav-icon1.svg'
+import CV from '../../assets/doc/Curriculum Paolo Compagnoni.pdf'
 import './navbar.css'
 
 const NavBar = () => {
@@ -54,12 +55,18 @@ const NavBar = () => {
                                 onClick={() => onUpdateActiveLink('services')}>Servizi</Nav.Link>
                 <Nav.Link href="#portfolio" className={activeLink === 'portfolio' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</Nav.Link>
+                <Nav.Link href="#testimonials" className={activeLink === 'testimonials' ? 'active navbar-link' : "navbar-link"} 
+                                onClick={() => onUpdateActiveLink('testimonials')}>Feedback</Nav.Link>
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
                     <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt="linkedIn" /></a>
                 </div>
-                <a href="#contact"><button className='vvd' onClick={() => console.log('connect')}><span>Contattami!</span></button></a> 
+                <div className="navBtns">
+                    <a href={CV} download={'Curriculum Paolo Compagnoni'}> <button className='cvBtn' ><span>CV</span></button></a>
+                    <a href="#contact"><button ><span>Contattami!</span></button></a>
+                </div>
+                
             </span>
             </Navbar.Collapse>
         </Container>

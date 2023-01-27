@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import Me from '../../assets/img/Me.png'
-import { Award, People, FolderCheck } from 'react-bootstrap-icons';
+import { Award, FolderCheck, Mortarboard } from 'react-bootstrap-icons';
 
 const About = () => {
   return (
@@ -19,14 +19,14 @@ const About = () => {
             <div className="about-content">
                 <div className="about-cards">
                     <article className="about-card">
-                        <Award className='about-icon'/>
-                        <h5>Esperienza</h5>
-                        <small>1+ Anni operativo</small>
+                        <Mortarboard className='about-icon'/>
+                        <h5>Laurea</h5>
+                        <small>Ingegneria Informatica e dell'Automazione</small>
                     </article>
                     <article className="about-card">
-                        <People className='about-icon'/>
-                        <h5>Clienti</h5>
-                        <small>2+ Clienti in tutta Italia</small>
+                        <Award className='about-icon'/>
+                        <h5>Esperienza</h5>
+                        <small>Operativo da 2 anni nel settore</small>
                     </article>
                     <article className="about-card">
                         <FolderCheck className='about-icon'/>
@@ -36,10 +36,13 @@ const About = () => {
                 </div>
 
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus praesentium modi rem doloribus nesciunt quaerat quidem eum minima officiis, aliquam illum doloremque itaque iusto pariatur eaque exercitationem tenetur tempore ad.
+                    Ho 27 anni, amo l'informatica, suonare la chitarra e andare in giro con la mia bici da corsa. <br /><br />
+                    
+                    Durante gli ultimi anni dell'università ho iniziato a sviluppare i primi progetti per mettere in pratica le competenze acquisite.
+    
                 </p>
 
-                <a href="#contact" className='btn btn-primary'>Lavoriamo ad un nuovo progetto insieme!</a>
+                <a href="#contact" className='btn btn-primary'>Lavoriamo insieme!</a>
             </div>
         </div>
     </section>
