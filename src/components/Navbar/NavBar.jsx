@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Container, Nav} from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import logo from '../../assets/img/logo_2_transparent.png'
 import navIcon1 from '../../assets/img/nav-icon1.svg'
 import CV from '../../assets/doc/Curriculum Paolo Compagnoni.pdf'
@@ -53,18 +53,19 @@ const NavBar = () => {
                                 onClick={() => onUpdateActiveLink('experience')}>Competenze</Nav.Link>
                 <Nav.Link href="#services" className={activeLink === 'services' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('services')}>Servizi</Nav.Link>
-                <Nav.Link href="#portfolio" className={activeLink === 'portfolio' ? 'active navbar-link' : "navbar-link"} 
-                                onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</Nav.Link>
-                <Nav.Link href="#testimonials" className={activeLink === 'testimonials' ? 'active navbar-link' : "navbar-link"} 
-                                onClick={() => onUpdateActiveLink('testimonials')}>Feedback</Nav.Link>
+                <NavDropdown title="Altro" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#portfolio">Portfolio</NavDropdown.Item>
+                    <NavDropdown.Item href="#feedback">Feedback</NavDropdown.Item>                    
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item download={'Curriculum Paolo Compagnoni'} href={CV}>Scarica CV</NavDropdown.Item>
+            </NavDropdown>
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
                     <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt="linkedIn" /></a>
                 </div>
                 <div className="navBtns">
-                    <a href={CV} download={'Curriculum Paolo Compagnoni'}> <button className='cvBtn' ><span>CV</span></button></a>
-                    <a href="#contact"><button ><span>Contattami!</span></button></a>
+                    <a href="#contact"><button ><span>Contattami</span></button></a>
                 </div>
                 
             </span>
