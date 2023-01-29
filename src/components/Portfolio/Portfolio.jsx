@@ -1,6 +1,6 @@
 import React from 'react'
-import IMG1 from '../../assets/img/portfolio3.jpg'
 import './portfolio.css'
+import data from './portfolio.js'
 
 const Portfolio = () => {
   return (
@@ -11,67 +11,30 @@ const Portfolio = () => {
         <h2>Portfolio</h2>
 
         <div className="container portfolio-container">
-            <article className='portfolio-item'>
-                <div className="portfolio-item-image">
-                    <img src={IMG1} alt="" />
-                </div>
-                <h3>Titolo progetto 1</h3>
-                <div className="portfolio-item-cta">
-                    <a href="https://github.com" className='btn'>Github</a>
-                    <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
-                </div>
-            </article>
-            <article className='portfolio-item'>
-                <div className="portfolio-item-image">
-                    <img src={IMG1} alt="" />
-                </div>
-                <h3>Titolo progetto 1</h3>
-                <div className="portfolio-item-cta">
-                    <a href="https://github.com" className='btn'>Github</a>
-                    <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
-                </div>
-            </article>
-            <article className='portfolio-item'>
-                <div className="portfolio-item-image">
-                    <img src={IMG1} alt="" />
-                </div>
-                <h3>Titolo progetto 1</h3>
-                <div className="portfolio-item-cta">
-                    <a href="https://github.com" className='btn'>Github</a>
-                    <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
-                </div>
-            </article>
-            <article className='portfolio-item'>
-                <div className="portfolio-item-image">
-                    <img src={IMG1} alt="" />
-                </div>
-                <h3>Titolo progetto 1</h3>
-                <div className="portfolio-item-cta">
-                    <a href="https://github.com" className='btn'>Github</a>
-                    <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
-                </div>
-            </article>
-            <article className='portfolio-item'>
-                <div className="portfolio-item-image">
-                    <img src={IMG1} alt="" />
-                </div>
-                <h3>Titolo progetto 1</h3>
-                <div className="portfolio-item-cta">
-                    <a href="https://github.com" className='btn'>Github</a>
-                    <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
-                </div>
-            </article>
-            <article className='portfolio-item'>
-                <div className="portfolio-item-image">
-                    <img src={IMG1} alt="" />
-                </div>
-                <h3>Titolo progetto 1</h3>
-                <div className="portfolio-item-cta">
-                    <a href="https://github.com" className='btn'>Github</a>
-                    <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai a sito</a>
-                </div>
-            </article>
-            
+            {
+                data.map((value, index) => {
+                    return(
+                        <>
+                            <article className='portfolio-item'>
+                                <div className="portfolio-item-image">
+                                    <img key={index} src={value.cover} alt="portfolio_image" />
+                                </div>
+                                <h3>{value.title}</h3>
+                                <div className="portfolio-item-descr">
+                                        {value.desc}
+                                    </div>
+                                <div className="portfolio-item-cta">
+                                <a href="https://github.com" className='btn github'>Github</a>
+                                    {
+                                        value.isSite === true ? <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
+                                                        : null
+                                    }   
+                                </div>
+                            </article>
+                        </>
+                    )
+                })
+            }
             
         </div>
     </section>

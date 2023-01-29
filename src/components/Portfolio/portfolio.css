@@ -31,7 +31,12 @@
 }
 
 .portfolio-item h3{
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 1rem;
+}
+
+.portfolio .portfolio-item-descr{
+    height: 48px;
+    margin-bottom: 1rem;
 }
 
 .portfolio-item-cta{
@@ -43,6 +48,11 @@
 .portfolio .btn{
     border-color: var(--color-primary);
     color: var(--color-primary);
+}
+
+.portfolio .github:hover{
+    background-color: var(--color-primary);
+    color: var(--color-bg-variant);
 }
 
 .portfolio .btn-primary{

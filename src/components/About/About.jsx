@@ -31,7 +31,7 @@ const About = () => {
                     <article className="about-card">
                         <FolderCheck className='about-icon'/>
                         <h5>Progetti</h5>
-                        <small>5+ progetti completati</small>
+                        <small>2+ progetti completati</small>
                     </article>
                 </div>
 
