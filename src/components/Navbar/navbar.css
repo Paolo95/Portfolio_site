@@ -42,6 +42,25 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 
+.navbar-nav .nav-item .show{
+    background-color: rgb(43, 65, 185);
+    border: none;
+    padding-left: 15px;
+}
+
+.navbar .nav-item .dropdown-item{
+    color:#fff;
+    opacity: 0.75;
+}
+
+.navbar .nav-item .dropdown-item:hover{
+    background-color: transparent;
+    color: var(--color-primary);
+    opacity: 1;
+    font-weight: 400;
+}
+
+
 span.navbar-text {
     display: flex;
     align-items: center;
