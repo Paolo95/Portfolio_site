@@ -55,7 +55,7 @@ const NavBar = () => {
                                 onClick={() => onUpdateActiveLink('services')}>Servizi</Nav.Link>
                 <NavDropdown title="Altro" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#portfolio">Portfolio</NavDropdown.Item>
-                    <NavDropdown.Item href="#feedback">Feedback</NavDropdown.Item>                    
+                    <NavDropdown.Item href="#testimonials">Feedback</NavDropdown.Item>                    
                     <NavDropdown.Divider />
                     <NavDropdown.Item download={'Curriculum Paolo Compagnoni'} href={CV}>Scarica CV</NavDropdown.Item>
             </NavDropdown>
