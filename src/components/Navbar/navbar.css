@@ -60,6 +60,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     font-weight: 400;
 }
 
+.navbar .nav-item .dropdown-item.active{
+    background-color: transparent!important;
+    color: var(--color-primary);
+}
 
 span.navbar-text {
     display: flex;

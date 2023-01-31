@@ -14,7 +14,7 @@ const data = [
         client_review: "Player stupendo, semplice e tagliato per la nostra esigenza!",
     },
     {
-        client_name: "TraceTech S.r.l",
+        client_name: "TraceTech s.r.l",
         cover: img2,
         client_review: "Per la nostra start up, l'app in AR è stato un elemento fondamentale!",
     },
