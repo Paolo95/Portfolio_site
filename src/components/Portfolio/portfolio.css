@@ -41,8 +41,9 @@
 }
 
 .portfolio .portfolio-item-descr{
-    height: 48px;
+    height: 72px;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .portfolio-item-cta{
