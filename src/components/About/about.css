@@ -6,7 +6,7 @@
 
 .about {
     margin-top: 0;
-    padding: 5% 0 80px 0;
+    padding: 10% 0 80px 0;
 }
 
 .about h2{
@@ -93,6 +93,12 @@
     color: black;
 }
 @media screen and (max-width: 1024px) {
+
+    .about {
+        margin-top: 0;
+        padding: 20% 0 80px 0;
+    }
+
     .about-container{
         grid-template-columns: 1fr;
         gap: 0;
@@ -110,6 +116,11 @@
 
 @media screen and (max-width: 600px) {
  
+    .about {
+        margin-top: 0;
+        padding: 18% 0 80px 0;
+    }
+
     .about-me{
         width: 65%;
         margin: 0 auto 3rem;

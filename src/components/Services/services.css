@@ -6,7 +6,7 @@
 
 .services {
     margin-top: 0;
-    padding: 5% 0 80px 0;
+    padding: 10% 0 80px 0;
 }
 
 .services h2{
@@ -76,9 +76,20 @@
     .service{
         height: auto;
     }
+
+    .services {
+        margin-top: 0;
+        padding: 20% 0 80px 0;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
+    
+    .services {
+        margin-top: 0;
+        padding: 18% 0 80px 0;
+    }
     
     .services-container{
         grid-template-columns: 1fr;

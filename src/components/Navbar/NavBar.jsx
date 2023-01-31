@@ -4,12 +4,13 @@ import logo from '../../assets/img/logo_2_transparent.png'
 import navIcon1 from '../../assets/img/nav-icon1.svg'
 import CV from '../../assets/doc/Curriculum Paolo Compagnoni.pdf'
 import './navbar.css'
+import ScrollspyNav from "react-scrollspy-nav";
 
 const NavBar = () => {
     
     // useState imposta una variabile di stato activeLink e una funzione setActiveLink che lo aggiorna
 
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('');
     const [scrolled, seScrolled] = useState(false);
 
     //con useEffect diciamo a React che il componente deve fare qualcosa dopo il suo render
@@ -35,9 +36,16 @@ const NavBar = () => {
     }
 
     return (
+        <ScrollspyNav
+                    scrollTargetIds={["home", "about", "experience", "services", "portfolio", "testimonials"]}
+                    offset={0}
+                    activeNavClass="active"
+                    scrollDuration="100"
+                    headerBackground="false"
+                >
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#">
                 <img src={logo} alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" >
@@ -45,7 +53,7 @@ const NavBar = () => {
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} 
+                <Nav.Link href="#home" className={"navbar-link"} 
                                 onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                 <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('about')}>Chi sono</Nav.Link>
@@ -53,7 +61,7 @@ const NavBar = () => {
                                 onClick={() => onUpdateActiveLink('experience')}>Competenze</Nav.Link>
                 <Nav.Link href="#services" className={activeLink === 'services' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('services')}>Servizi</Nav.Link>
-                <NavDropdown title="Altro" id="basic-nav-dropdown">
+                <NavDropdown title="Altro">
                     <NavDropdown.Item href="#portfolio" className={"navbar-link"} 
                                 onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</NavDropdown.Item>
                     <NavDropdown.Item href="#testimonials" className={"navbar-link"}
@@ -74,6 +82,7 @@ const NavBar = () => {
             </Navbar.Collapse>
         </Container>
         </Navbar>
+        </ScrollspyNav>
     );
 }
 

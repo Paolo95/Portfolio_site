@@ -6,7 +6,7 @@
 
 .experience {
     margin-top: 0;
-    padding: 5% 0 80px 0;
+    padding: 10% 0 80px 0;
 }
 
 .experience h2{
@@ -54,6 +54,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    .experience {
+        margin-top: 0;
+        padding: 20% 0 80px 0;
+    }
+
     .experience-container{
         grid-template-columns: 1fr;
     }
@@ -70,6 +76,11 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .experience {
+        margin-top: 0;
+        padding: 18% 0 80px 0;
+    }
 
     .experience-container{
         gap: 1rem;
