@@ -55,8 +55,10 @@
     font-size: 30px;
 }
 
-.service-list p{
+.service-list div{
     font-size: 0.9rem;
+    width: 100%;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1024px) {

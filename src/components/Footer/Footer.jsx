@@ -1,26 +1,34 @@
-import { Col, Container, Row } from "react-bootstrap";
-import logo from "../../assets/img/logo_2_transparent.png";
-import navIcon1 from '../../assets/img/nav-icon1.svg'
+import React from 'react'
+import CV from '../../assets/doc/Curriculum Paolo Compagnoni.pdf'
+import {Linkedin, Instagram, Whatsapp} from 'react-bootstrap-icons'
 import './footer.css'
 
-const Footer = () =>{
-    return (
-        <footer className="footer">
-            <Container>
-                <Row className="align-items-center">
-                    <Col sm={6}>
-                        <img src={logo} alt='Logo' />
-                    </Col>
-                    <Col sm={6} className='text-center text-sm-end'>
-                        <div className="social-icon">
-                            <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt='linkedIn'/></a>
-                        </div>
-                        <p>Copyright 2022, tutti i diritti riservati</p>
-                    </Col>
-                </Row>
-            </Container>
-        </footer>
-    )
+const Footer = () => {
+  return (
+    <footer>
+        <a href="#home" className='footer-logo'>Paolo Compagnoni</a>
+
+        <ul className='permalinks'>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Chi sono</a></li>
+            <li><a href="#experience">Competenze</a></li>
+            <li><a href="#services">Servizi</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Feedback</a></li>
+            <li><a href={CV} download={'Curriculum Paolo Compagnoni'}>Scarica CV</a></li>
+        </ul>
+
+        <div className="footer-socials">
+            <a href="https://www.linkedin.com/in/paolo-compagnoni-3749631b2/"><Linkedin /></a>
+            <a href="https://www.instagram.com/paolo__compagnoni/"><Instagram /></a>
+            <a href="https://api.whatsapp.com/send?phone=3397619766"><Whatsapp /></a>
+        </div>
+
+        <div className="footer-copyright">
+            <small>&copy; Paolo Compagnoni. Tutti i diritti riservati.</small>
+        </div>
+    </footer>
+  )
 }
 
-export default Footer;
+export default Footer

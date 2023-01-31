@@ -1,5 +1,8 @@
 import React from 'react'
 import {Check2} from 'react-bootstrap-icons'
+import fullstack from './fullstack.js'
+import app from './app.js'
+import other from './other.js'
 import './services.css'
 
 const Services = () => {
@@ -16,26 +19,16 @@ const Services = () => {
                     </div>
 
                     <ul className="service-list">
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
+                        {
+                            fullstack.map((value, index) => {
+                                return(
+                                    <li key={index}>
+                                        <Check2 className='service-list-icon' />
+                                        <div>{value.item}</div>
+                                    </li>
+                                )
+                            })  
+                        }
                     </ul>
                 </article>
 
@@ -45,26 +38,16 @@ const Services = () => {
                     </div>
 
                     <ul className="service-list">
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
+                    {
+                        app.map((value, index) => {
+                            return(
+                                <li key={index}>
+                                    <Check2 className='service-list-icon' />
+                                    <div>{value.item}</div>
+                                </li>
+                            )
+                        })  
+                    }
                     </ul>
                 </article>
 
@@ -74,26 +57,16 @@ const Services = () => {
                     </div>
 
                     <ul className="service-list">
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
-                        <li>
-                            <Check2 className='service-list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi?</p>
-                        </li>
+                    {
+                        other.map((value, index) => {
+                            return(
+                                <li key={index}>
+                                    <Check2 className='service-list-icon' />
+                                    <div>{value.item}</div>
+                                </li>
+                            )
+                        })  
+                    }
                     </ul>
                 </article>
             </div>

@@ -24,9 +24,9 @@ const Portfolio = () => {
                                         {value.desc}
                                     </div>
                                 <div className="portfolio-item-cta">
-                                <a href="https://github.com" className='btn github'>Github</a>
+                                <a href={value.github} className='btn github'>Github</a>
                                     {
-                                        value.isSite === true ? <a href="https://github.com" className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
+                                        value.isSite === true ? <a href={value.site} className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
                                                         : null
                                     }   
                                 </div>

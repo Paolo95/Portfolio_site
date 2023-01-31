@@ -28,6 +28,12 @@
 .portfolio-item-image{
     border-radius: 1.5rem;
     overflow: hidden;
+    height: 300px;
+}
+
+.portfolio-item-image img{
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-item h3{

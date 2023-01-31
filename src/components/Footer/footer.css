@@ -1,24 +1,86 @@
-/************ Footer Css ************/
+footer{
+  background: rgb(43, 65, 185);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
 
-.footer{
-    padding: 0;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+footer a {
+  text-decoration: none;
+  color: var(--color-bg);
+}
+
+.footer-logo{
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem;
+  display: inline-block;
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+.footer-logo:hover{
+  color: var(--color-primary);
+}
+
+.permalinks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+}
+
+.permalinks a{
+  color: var(--color-);
+}
+
+.permalinks a:hover{
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.footer-socials{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.footer-socials a {
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.footer-socials a:hover{
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.footer-copyright{
+  margin-bottom: 4rem;
+  color: var(--color-bg);
+}
+
+@media screen and (max-width:600px) {
   
-  .footer img{
-    width: 26%;
+  .permalinks{
+    flex-direction: column;
+    gap: 1.5rem;
   }
-  
-  .footer .social-icon{
-    padding-top: 10px;
+
+  footer ul{
+    padding-left: 0;
   }
-  
-  .footer p {
-    font-weight: 400;
-    font-size: 14px;
-    color: #B8B8B8;
-    letter-spacing: 0.5px;
-    margin-top: 20px;
+
+  .footer-socials{
+    margin-bottom: 2.6rem;
   }
+}
