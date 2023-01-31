@@ -54,8 +54,10 @@ const NavBar = () => {
                 <Nav.Link href="#services" className={activeLink === 'services' ? 'active navbar-link' : "navbar-link"} 
                                 onClick={() => onUpdateActiveLink('services')}>Servizi</Nav.Link>
                 <NavDropdown title="Altro" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#portfolio">Portfolio</NavDropdown.Item>
-                    <NavDropdown.Item href="#testimonials">Feedback</NavDropdown.Item>                    
+                    <NavDropdown.Item href="#portfolio" className={"navbar-link"} 
+                                onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</NavDropdown.Item>
+                    <NavDropdown.Item href="#testimonials" className={"navbar-link"}
+                                onClick={() => onUpdateActiveLink('testimonials')}>Feedback</NavDropdown.Item>                    
                     <NavDropdown.Divider />
                     <NavDropdown.Item download={'Curriculum Paolo Compagnoni'} href={CV}>Scarica CV</NavDropdown.Item>
             </NavDropdown>
