@@ -4,10 +4,8 @@ import {PatchCheckFill} from 'react-bootstrap-icons'
 
 const Experience = () => {
   return (
-    <section className='experience'>
-        <div className='gap' id='experience'>
-        </div>
-        
+    <section className='experience' id='experience'>
+ 
         <h2>Le mie competenze</h2>
 
         <div className="container experience-container">

@@ -5,9 +5,8 @@ import { Award, FolderCheck, Mortarboard } from 'react-bootstrap-icons';
 
 const About = () => {
   return (
-    <section className='about'>
-        <div className='gap' id='about'>
-        </div>
+    <section className='about' id='about'>
+    
         <h2>Chi sono</h2>
 
         <div className="container about-container">

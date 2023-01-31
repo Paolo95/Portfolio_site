@@ -16,9 +16,8 @@ const Testimonials = () => {
     SwiperCore.use([Autoplay]);
 
   return (
-    <section className='testimonials'>
-        <div className='gap' id='testimonials'>
-        </div>
+    <section className='testimonials' id='testimonials'>
+     
         <h2>Feedback</h2>
 
         <Swiper className="container testimonials-container"

@@ -4,6 +4,11 @@
     gap: 15%;
 }
 
+.about {
+    margin-top: 0;
+    padding: 5% 0 80px 0;
+}
+
 .about h2{
     text-align: center;
     margin-bottom: 60px;

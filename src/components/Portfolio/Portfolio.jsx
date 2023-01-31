@@ -4,9 +4,7 @@ import data from './portfolio.js'
 
 const Portfolio = () => {
   return (
-    <section className='portfolio'>
-        <div className='gap' id='portfolio'>
-        </div>
+    <section className='portfolio' id='portfolio'>
 
         <h2>Portfolio</h2>
 

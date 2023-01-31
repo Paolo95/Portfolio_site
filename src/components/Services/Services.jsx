@@ -7,9 +7,8 @@ import './services.css'
 
 const Services = () => {
   return (
-    <section className='services'>
-        <div className='gap' id='services'>
-        </div>
+    <section className='services' id='services'>
+     
             <h2>Servizi</h2>
 
             <div className="container services-container">

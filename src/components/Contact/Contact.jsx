@@ -35,9 +35,8 @@ const Contact = () => {
       };
 
   return (
-    <section className="contact">
-        <div className='gap' id='contact'>
-        </div>
+    <section className="contact" id='contact'>
+        
         <h2>Contattami</h2>
         <div className="container contact-container">
             <div className="contact-options">
