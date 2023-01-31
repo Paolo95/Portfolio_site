@@ -16,7 +16,7 @@ const Testimonials = () => {
     SwiperCore.use([Autoplay]);
 
   return (
-    <section className='services'>
+    <section className='testimonials'>
         <div className='gap' id='testimonials'>
         </div>
         <h2>Feedback</h2>
@@ -36,13 +36,12 @@ const Testimonials = () => {
                 data.map((value, index) => {
                     return(
                         <>
-                        <SwiperSlide key={index} className="testimonial">
-                            <h5 className='client-name'>{value.client_name}</h5>
-                            <small className='client-review'>
-                                {value.client_review}
-                            </small>
-                        </SwiperSlide>
 
+                            <SwiperSlide key={index} className="testimonial">
+                                <h5 className='client-name'>{value.client_name}</h5>
+                                <small className='client-review'>{value.client_review}</small>
+                            </SwiperSlide>
+                        
                         </>
                     )
                 })

@@ -15,14 +15,12 @@ const Portfolio = () => {
                 data.map((value, index) => {
                     return(
                         <>
-                            <article className='portfolio-item'>
+                            <article key={index} className='portfolio-item'>
                                 <div className="portfolio-item-image">
-                                    <img key={index} src={value.cover} alt="portfolio_image" />
+                                    <img src={value.cover} alt="portfolio_image" />
                                 </div>
                                 <h3>{value.title}</h3>
-                                <div className="portfolio-item-descr">
-                                        {value.desc}
-                                    </div>
+                                <div className="portfolio-item-descr">{value.desc}</div>
                                 <div className="portfolio-item-cta">
                                 <a href={value.github} className='btn github'>Github</a>
                                     {
