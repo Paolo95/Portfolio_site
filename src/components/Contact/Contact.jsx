@@ -84,7 +84,7 @@ const Contact = () => {
                        required/>
                 <textarea name='message' rows={7} placeholder='Il tuo messaggio...' required></textarea>
                 <ReCAPTCHA 
-                    sitekey='6LeocEUkAAAAANwgFKtVeJye8LhXaYXjsoJEQcBt'
+                    sitekey='6LdCskUkAAAAAEia-yw7XaehibhYXyVN7OOrFMpJ'
                     onChange={onChange}/>
                 {
                     isRECAPTCHA ? <button type='submit' className='btn btn-primary'>Invia messaggio</button>
