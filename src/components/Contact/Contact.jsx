@@ -5,8 +5,6 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
-const validPassword = new RegExp(/^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/);
-
 const Contact = () => {
 
     const form = useRef();
@@ -14,6 +12,7 @@ const Contact = () => {
     const [hasError, setHasError] = useState(false);
     const [email, setEmail] = useState('');
     const [isRECAPTCHA, setRECAPTCHA] = useState(false);
+    const validPassword = new RegExp(/^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/);
 
     const onChange = () =>{
         setRECAPTCHA(true);
@@ -88,7 +87,7 @@ const Contact = () => {
                     onChange={onChange}/>
                 {
                     isRECAPTCHA ? <button type='submit' className='btn btn-primary'>Invia messaggio</button>
-                                : <button type='submit' className='btn btn-primary disabled'>Invia messaggio</button>
+                                : <button disabled type='submit' className='btn btn-primary disabled'>Invia messaggio</button>
                 }
                 
             </form>
