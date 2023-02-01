@@ -34,6 +34,7 @@ const Contact = () => {
             e.target.reset();
         }else{
             setHasError(true);
+            setIsSent(false);
             e.target.reset();
         }
         
