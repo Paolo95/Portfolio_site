@@ -3,6 +3,7 @@ import './contact.css'
 import {Envelope, Whatsapp, Instagram} from 'react-bootstrap-icons'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const validPassword = new RegExp(/^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/);
 
@@ -12,6 +13,11 @@ const Contact = () => {
     const [isSent, setIsSent] = useState(false);
     const [hasError, setHasError] = useState(false);
     const [email, setEmail] = useState('');
+    const [isRECAPTCHA, setRECAPTCHA] = useState(false);
+
+    const onChange = () =>{
+        setRECAPTCHA(true);
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -77,7 +83,14 @@ const Contact = () => {
                        onChange={(e) => setEmail(e.target.value)}
                        required/>
                 <textarea name='message' rows={7} placeholder='Il tuo messaggio...' required></textarea>
-                <button type='submit' className='btn btn-primary'>Invia messaggio</button>
+                <ReCAPTCHA 
+                    sitekey='6LeocEUkAAAAANwgFKtVeJye8LhXaYXjsoJEQcBt'
+                    onChange={onChange}/>
+                {
+                    isRECAPTCHA ? <button type='submit' className='btn btn-primary'>Invia messaggio</button>
+                                : <button type='submit' className='btn btn-primary disabled'>Invia messaggio</button>
+                }
+                
             </form>
         </div>
     </section>

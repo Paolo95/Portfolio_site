@@ -74,6 +74,12 @@
   border-color: #0a58ca;
 }
 
+.contact .btn-primary.disabled{
+  color: #fff;
+  border-color: #0a58ca;
+  background-color: transparent;
+}
+
 .messageSent{
   text-align: center;
   color: var(--color-primary);
