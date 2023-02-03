@@ -36,13 +36,6 @@ const NavBar = () => {
     }
 
     return (
-        <ScrollspyNav
-                    scrollTargetIds={["home", "about", "experience", "services", "portfolio", "testimonials"]}
-                    offset={0}
-                    activeNavClass="active"
-                    scrollDuration="100"
-                    headerBackground="false"
-                >
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
             <Navbar.Brand href="#">
@@ -51,6 +44,13 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" >
                 <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
+            <ScrollspyNav
+                scrollTargetIds={["home", "about", "experience", "services", "portfolio", "testimonials"]}
+                offset={0}
+                activeNavClass="active"
+                scrollDuration="100"
+                headerBackground="false"
+            >
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="#home" className={"navbar-link"} 
@@ -69,7 +69,9 @@ const NavBar = () => {
                     <NavDropdown.Divider />
                     <NavDropdown.Item download={'Curriculum Paolo Compagnoni'} href={CV}>Scarica CV</NavDropdown.Item>
             </NavDropdown>
-            </Nav>
+            </Nav>         
+            </Navbar.Collapse>
+            </ScrollspyNav>
             <span className='navbar-text'>
                 <div className='social-icon'>
                     <a href='https://www.linkedin.com/in/paolo-compagnoni-3749631b2/' target='_blank' rel="noreferrer"><img src={navIcon1} alt="linkedIn" /></a>
@@ -77,12 +79,9 @@ const NavBar = () => {
                 <div className="navBtns">
                     <a href="#contact"><button ><span>Contattami</span></button></a>
                 </div>
-                
             </span>
-            </Navbar.Collapse>
         </Container>
-        </Navbar>
-        </ScrollspyNav>
+        </Navbar>        
     );
 }
 
