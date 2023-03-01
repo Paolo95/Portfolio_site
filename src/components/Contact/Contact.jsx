@@ -76,13 +76,35 @@ const Contact = () => {
                            : null
                 }
                 
-                <input type="text" name='name' placeholder='Nome e cognome...' required/>
+                <input type="text"
+                       name='name' 
+                       placeholder='Nome e cognome...' 
+                       onFocus={(e) => e.target.placeholder = ''}
+                       onBlur={(e) => e.target.value !== '' ? 
+                                        e.target.placeholder = '' : 
+                                        e.target.placeholder = 'Nome e cognome...'}
+                       required/>
+
                 <input type="text" 
                        name='email' 
                        placeholder='La tua email...' 
+                       onFocus={(e) => e.target.placeholder = ''}
+                       onBlur={(e) => e.target.value !== '' ? 
+                                        e.target.placeholder = '' : 
+                                        e.target.placeholder = 'La tua email...'}
                        onChange={(e) => setEmail(e.target.value)}
                        required/>
-                <textarea name='message' rows={7} placeholder='Il tuo messaggio...' required></textarea>
+
+                <textarea name='message' 
+                          rows={7} 
+                          placeholder='Il tuo messaggio...'
+                          onFocus={(e) => e.target.placeholder = ''}
+                          onBlur={(e) => e.target.value !== '' ? 
+                                        e.target.placeholder = '' : 
+                                        e.target.placeholder = 'Il tuo messaggio...'}
+                          required>
+                </textarea>
+
                 <ReCAPTCHA 
                     sitekey='6LdCskUkAAAAAEia-yw7XaehibhYXyVN7OOrFMpJ'
                     onChange={onChange}/>
