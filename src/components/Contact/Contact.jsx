@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import './contact.css'
-import {Envelope, Whatsapp, Instagram} from 'react-bootstrap-icons'
+import {Envelope, Whatsapp, Instagram, ArrowUpCircleFill} from 'react-bootstrap-icons'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -71,7 +71,7 @@ const Contact = () => {
                            : <span className='messageSent'>Messaggio inviato!</span>
                 }
 
-{
+                {
                     hasError ? <span className='errorMsg show'>Mail non valida, riprova!</span>
                            : null
                 }
@@ -114,6 +114,19 @@ const Contact = () => {
                 }
                 
             </form>
+        </div>
+        <div className='backTop-container'>
+            
+            <a href='#home'>
+                <ArrowUpCircleFill
+                    className='backTopIcon'
+                    size={50}
+                    />
+            </a>                
+            
+            <div>
+                <span>Torna all'inizio</span>
+            </div>
         </div>
     </section>
   )

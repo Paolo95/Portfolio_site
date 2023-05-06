@@ -131,6 +131,25 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.contact .backTop-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+  gap: 5px;
+}
+
+.contact .backTopIcon{
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.contact .backTop-container span{
+  color: var(--color-primary);
+}
+
 @media screen and (max-width: 1024px) {
   
   .container.contact-container{
