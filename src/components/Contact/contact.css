@@ -8,7 +8,7 @@
 
 .contact{
   margin-top: 0;
-  padding: 10% 0 80px 0;
+  padding: 5% 0 80px 0;
 }
 
 .container.contact-container{
@@ -21,6 +21,7 @@
 .container.contact-container input:hover,
 .container.contact-container textarea:hover{
   border-color: var(--color-primary);
+  transition: 0.5s;
 }
 
 .container.contact-container input:focus,

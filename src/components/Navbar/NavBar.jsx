@@ -7,24 +7,49 @@ import './navbar.css'
 
 const NavBar = () => {
     
-    const [activeLink, setActiveLink] = useState('');
-    const [scrolled, seScrolled] = useState(false);
+    const [activeLink, setActiveLink] = useState('home');
+    const [scrolled, setScrolled] = useState(false);
 
+    
     useEffect(() => {
         const onScroll = () => {
+            
             if (window.scrollY > 50) {
-                seScrolled(true);
+                setScrolled(true);
             }else{
-                seScrolled(false);
+                setScrolled(false);
             }
+            
+            if(window.scrollY >= 0 && window.scrollY < 721){
+                
+                setActiveLink('home');
+
+            }else if (window.scrollY >= 721 && window.scrollY < 1441){
+                
+                setActiveLink('about');
+
+            }else if (window.scrollY >= 1441 && window.scrollY < 2099){
+                
+                setActiveLink('experience');
+
+            }else if (window.scrollY >= 2099 && window.scrollY < 2754){
+                
+                setActiveLink('services');
+
+            }else if (window.scrollY >= 2754 && window.scrollY < 3573){
+                
+                setActiveLink('portfolio');
+
+            }else if (window.scrollY >= 3573 && window.scrollY < 4026){
+                
+                setActiveLink('testimonials');
+
+            }else setActiveLink('');
         }
 
         window.addEventListener("scroll", onScroll);
         
-        //rimuovo il listener quando il componente viene rimosso
-
-        return () => window.removeEventListener("scroll", onScroll);
-    }, [])
+    },[])
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
@@ -34,7 +59,7 @@ const NavBar = () => {
         
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="#home">
                     <img src={logo} alt="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" >
@@ -42,25 +67,50 @@ const NavBar = () => {
                 </Navbar.Toggle>
                 
                 <Navbar.Collapse id="basic-navbar-nav">
+
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className={"navbar-link"} 
-                                        onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : "navbar-link"} 
-                                        onClick={() => onUpdateActiveLink('about')}>Chi sono</Nav.Link>
-                        <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : "navbar-link"} 
-                                        onClick={() => onUpdateActiveLink('experience')}>Competenze</Nav.Link>
-                        <Nav.Link href="#services" className={activeLink === 'services' ? 'active navbar-link' : "navbar-link"} 
-                                        onClick={() => onUpdateActiveLink('services')}>Servizi</Nav.Link>
+                        <a  href="#home" 
+                            className={activeLink === 'home' ? 'nav-link navbar-link active' : "nav-link navbar-link"}
+                            onClick={() => onUpdateActiveLink('home')}>
+                            Home
+                        </a>
+                        <a  href="#about" 
+                            className={activeLink === 'about' ? 'nav-link navbar-link active' : "nav-link navbar-link"}
+                            onClick={() => onUpdateActiveLink('about')}>
+                            Chi sono
+                        </a>
+                        <a  href="#experience" 
+                            className={activeLink === 'experience' ? 'nav-link navbar-link active' : "nav-link navbar-link"}
+                            onClick={() => onUpdateActiveLink('experience')}>
+                            Competenze
+                        </a>
+                        <a  href="#services" 
+                            className={activeLink === 'services' ? 'nav-link navbar-link active' : "nav-link navbar-link"}
+                            onClick={() => onUpdateActiveLink('services')}>
+                            Servizi
+                        </a>
                         <NavDropdown title="Altro">
-                            <NavDropdown.Item href="#portfolio" className={"navbar-link"} 
-                                        onClick={() => onUpdateActiveLink('portfolio')}>Portfolio</NavDropdown.Item>
-                            <NavDropdown.Item href="#testimonials" className={"navbar-link"}
-                                        onClick={() => onUpdateActiveLink('testimonials')}>Feedback</NavDropdown.Item>                    
+                            <NavDropdown.Item   
+                                                href="#portfolio" 
+                                                className={activeLink === 'portfolio' ? 'navbar-link active' : "navbar-link"}
+                                                onClick={() => onUpdateActiveLink('portfolio')}>
+                                                Portfolio
+                            </NavDropdown.Item>
+                            <NavDropdown.Item   href="#testimonials" 
+                                                className={activeLink === 'testimonials' ? 'navbar-link active' : "navbar-link"}
+                                                onClick={() => onUpdateActiveLink('testimonials')}>
+                                                Feedback
+                            </NavDropdown.Item>          
+
                             <NavDropdown.Divider />
-                            <NavDropdown.Item download={'Curriculum Paolo Compagnoni'} href={CV}>Scarica CV</NavDropdown.Item>
+
+                            <NavDropdown.Item   download={'Curriculum Paolo Compagnoni'} 
+                                                href={CV}>
+                                                Scarica CV
+                            </NavDropdown.Item>
+
                         </NavDropdown>
-                    </Nav>         
-                    
+                    </Nav>                             
             
                         <span className='navbar-text'>
                             <div className='social-icon'>
