@@ -45,7 +45,7 @@ const data = [
     {
         title: "Easyscience",
         github: '',
-        site: 'https://www.easyscience.altervista.org',
+        site: 'https://easyscience.altervista.org',
         cover: img5,
         desc: "Un blog che parla di neuroscienze cognitive ed informatica",
         hasSite: true,
