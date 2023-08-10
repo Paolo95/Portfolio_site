@@ -88,6 +88,20 @@ const Experience = () => {
                             <small>Principiante</small>
                         </div>
                     </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>React Native</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Google Firebase</h4>
+                            <small>Principiante</small>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>

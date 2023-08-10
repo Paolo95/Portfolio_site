@@ -20,10 +20,23 @@ const Portfolio = () => {
                                 <h3>{value.title}</h3>
                                 <div className="portfolio-item-descr">{value.desc}</div>
                                 <div className="portfolio-item-cta">
-                                <a href={value.github} className='btn github'>Github</a>
                                     {
-                                        value.isSite === true ? <a href={value.site} className='btn btn-primary' target='_blank' rel='noreferrer'>Vai al sito</a>
-                                                        : null
+                                        value.hasGithub === true 
+                                            ? <a href={value.github} 
+                                                className='btn github'
+                                                target='_blank'
+                                                rel='noreferrer'>Github</a>
+                                            : null
+                                        
+                                    }
+                                
+                                    {
+                                        value.hasSite === true 
+                                            ? <a href={value.site} 
+                                                className='btn btn-primary' 
+                                                target='_blank' 
+                                                rel='noreferrer'>Vai al sito</a>
+                                            : null
                                     }   
                                 </div>
                             </article>

@@ -8,7 +8,7 @@ const fullstack = [
 
     },
     {
-        item: 'Realizzazione di siti web per le imprese',
+        item: 'Realizzazione di siti web Full Stack, Wordpress e WooCommerce',
 
     },
     {

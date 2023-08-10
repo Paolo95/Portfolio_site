@@ -7,6 +7,10 @@ const app = [
         item: 'Realizzazione di app Augmented Reality in grado di riconoscere gli oggetti in una scena e mostrare informazioni in tempo reale nella scena',
 
     },
+    {
+        item: 'Realizzazione di app utilizzando React Native',
+
+    },
 ];    
 
 export default app;
