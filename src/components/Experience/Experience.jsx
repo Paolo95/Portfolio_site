@@ -15,15 +15,15 @@ const Experience = () => {
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>HTML</h4>
+                            <h4>HTML/CSS</h4>
                             <small>Esperto</small>
                         </div>
                     </article>
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>CSS</h4>
-                            <small>Esperto</small>
+                            <h4>SEO Optimization</h4>
+                            <small>Intermedio</small>
                         </div>   
                     </article>
                     <article className='experience-details'>

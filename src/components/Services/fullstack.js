@@ -14,6 +14,9 @@ const fullstack = [
     {
         item: 'Siti web personalizzati',
 
+    },
+    {
+        item: 'Ottimizzazione SEO di siti Wordpress',
     }
 ];
 

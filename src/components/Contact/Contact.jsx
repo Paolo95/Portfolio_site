@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import './contact.css'
-import {Envelope, Whatsapp, Instagram, ArrowUpCircleFill} from 'react-bootstrap-icons'
+import {Envelope, Whatsapp, Linkedin, ArrowUpCircleFill} from 'react-bootstrap-icons'
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -53,10 +53,10 @@ const Contact = () => {
                     <a href="mailto:compagnonipaolo95@gmail.com" target='_blank' rel='noreferrer'>Mandami un messaggio!</a>
                 </article>
                 <article className='contact-option'>
-                    <Instagram className='contact-option-icon'/>
-                    <h4>Instagram</h4>
-                    <h5>paolo__compagnoni</h5>
-                    <a href="https://www.instagram.com/paolo__compagnoni/">Visita il mio profilo!</a>
+                    <Linkedin className='contact-option-icon'/>
+                    <h4>LinkedIn</h4>
+                    <h5>Paolo Compagnoni</h5>
+                    <a href="https://www.linkedin.com/in/paolo-compagnoni-3749631b2/">Visita il mio profilo!</a>
                 </article>
                 <article className='contact-option'>
                     <Whatsapp className='contact-option-icon'/>

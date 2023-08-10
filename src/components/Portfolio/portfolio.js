@@ -1,14 +1,16 @@
-import img1 from "../../assets/img/mrtecno-portfolio.jpg"
+import img1 from "../../assets/img/mrtecno-portfolio-fs.jpg"
 import img2 from "../../assets/img/tafka-portfolio.png"
 import img3 from "../../assets/img/trc-portfolio.png"
+import img4 from "../../assets/img/mrtecno-portfolio-wc.jpg"
+import img5 from "../../assets/img/easyscience.png"
 
 const data = [
 
     {
         title: "www.mrtecno.it",
-        github: 'https://github.com/Paolo95/sito_mrtecno_front-end',
+        github: '',
         site: 'https://www.mrtecno.it',
-        cover: img1,
+        cover: img4,
         desc: "Un sito di e-commerce per la compravendita di prodotti tecnologici realizzato con WooCommerce",
         hasSite: true,
         hasGithub: false,
@@ -39,6 +41,15 @@ const data = [
         desc: "Un sito di e-commerce Full Stack per la compravendita di prodotti tecnologici",
         hasSite: false,
         hasGithub: true,
+    },
+    {
+        title: "www.easyscience.altervista.org",
+        github: '',
+        site: 'https://www.easyscience.altervista.org',
+        cover: img5,
+        desc: "Un blog che parla di neuroscienze cognitive ed informatica",
+        hasSite: true,
+        hasGithub: false,
     },
 
 ]

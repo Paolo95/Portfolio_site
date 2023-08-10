@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import Me from '../../assets/img/Me.png'
+import Me from '../../assets/img/Me.jpg'
 import { Award, FolderCheck, Mortarboard } from 'react-bootstrap-icons';
 
 const About = () => {
@@ -25,12 +25,12 @@ const About = () => {
                     <article className="about-card">
                         <Award className='about-icon'/>
                         <h5>Esperienza</h5>
-                        <small>Operativo da 2 anni nel settore</small>
+                        <small>Operativo da 3 anni nel settore</small>
                     </article>
                     <article className="about-card">
                         <FolderCheck className='about-icon'/>
                         <h5>Progetti</h5>
-                        <small>2+ progetti completati</small>
+                        <small>3+ progetti completati</small>
                     </article>
                 </div>
 
