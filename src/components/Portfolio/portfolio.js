@@ -43,7 +43,7 @@ const data = [
         hasGithub: true,
     },
     {
-        title: "www.easyscience.altervista.org",
+        title: "Easyscience",
         github: '',
         site: 'https://www.easyscience.altervista.org',
         cover: img5,
