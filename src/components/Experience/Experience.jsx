@@ -36,7 +36,7 @@ const Experience = () => {
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>Bootstrap</h4>
+                            <h4>.NET/ASP.NET</h4>
                             <small>Intermedio</small>
                         </div>
                     </article>
@@ -44,6 +44,20 @@ const Experience = () => {
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
                             <h4>React</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Angular</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Bootstrap</h4>
                             <small>Intermedio</small>
                         </div>
                     </article>

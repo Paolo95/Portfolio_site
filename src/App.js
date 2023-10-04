@@ -7,8 +7,8 @@ import Footer from './components/Footer/Footer'
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Services from './components/Services/Services';
-import Portfolio from './components/Portfolio/Portfolio';
-import Testimonials from './components/Testimonials/Testimonials';
+import Portfolio from './components/Portfolio/Portfolio.jsx';
+import Testimonials from './components/Testimonials/Testimonials.jsx'
 
 
 function App() {
