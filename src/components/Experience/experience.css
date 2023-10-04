@@ -70,9 +70,6 @@
         margin: 0 auto;
     }
 
-    .experience-content{
-        padding: 1rem;
-    }
 }
 
 @media screen and (max-width: 600px) {

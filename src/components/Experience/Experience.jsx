@@ -22,7 +22,7 @@ const Experience = () => {
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>SEO Optimization</h4>
+                            <h4>SEO</h4>
                             <small>Intermedio</small>
                         </div>   
                     </article>
@@ -84,7 +84,7 @@ const Experience = () => {
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>Vuforia Engine</h4>
+                            <h4>Vuforia <br /> Engine</h4>
                             <small>Intermedio</small>
                         </div>
                     </article>
@@ -105,14 +105,14 @@ const Experience = () => {
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>React Native</h4>
+                            <h4>React <br /> Native</h4>
                             <small>Intermedio</small>
                         </div>
                     </article>
                     <article className='experience-details'>
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
-                            <h4>Google Firebase</h4>
+                            <h4>Google <br /> Firebase</h4>
                             <small>Principiante</small>
                         </div>
                     </article>
