@@ -118,6 +118,88 @@ const Experience = () => {
                     </article>
                 </div>
             </div>
+
+            <div className="experience-database">
+            <h3>Database</h3>
+                <div className="experience-content">
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>MySQL</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>PostgreSQL</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>SQLServer</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>MongoDB</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div className="experience-data">
+            <h3>Data Analytics</h3>
+                <div className="experience-content">
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Qlik</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Tableau</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>PowerBI</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Spark</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Hadoop</h4>
+                            <small>Intermedio</small>
+                        </div>
+                    </article>
+                    <article className='experience-details'>
+                        <PatchCheckFill className='experience-details-icon'/>
+                        <div>
+                            <h4>Python for <br /> Data Science</h4>
+                            <small></small>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
   )
