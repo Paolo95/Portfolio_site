@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import logo from '../../assets/img/logo_2_transparent.png'
 import navIcon1 from '../../assets/img/nav-icon1.svg'
-import CV from '../../assets/doc/Curriculum Paolo Compagnoni.pdf'
+import CV from '../../assets/doc/Curriculum Compagnoni Paolo.pdf'
 import './navbar.css'
 
 const NavBar = () => {
@@ -104,7 +104,7 @@ const NavBar = () => {
 
                             <NavDropdown.Divider />
 
-                            <NavDropdown.Item   download={'Curriculum Paolo Compagnoni'} 
+                            <NavDropdown.Item   download={'Curriculum Compagnoni Paolo'} 
                                                 href={CV}>
                                                 Scarica CV
                             </NavDropdown.Item>

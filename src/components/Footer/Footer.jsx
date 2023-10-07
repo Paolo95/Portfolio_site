@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/doc/Curriculum Paolo Compagnoni.pdf'
+import CV from '../../assets/doc/Curriculum Compagnoni Paolo.pdf'
 import {Linkedin, Instagram, Whatsapp} from 'react-bootstrap-icons'
 import './footer.css'
 
