@@ -57,7 +57,7 @@ const Banner = () => {
                                 <h1>{'Ciao! Sono Paolo, '}<span className="wrap">{text} </span></h1>
                             </div>
                             
-                            <p>Realizzo siti web con React e app per Android e iOS con React Native, AR app in Unity e molto altro!.<br/><br/>
+                            <p>Realizzo siti web con ReactJS, Angular e ASP.NET. Mi occupo anche di Data Analytics e molto altro!.<br/><br/>
                                 Scorri in basso per vedere il mio portfolio!
                             </p>
                             <a href="#contact">
