@@ -195,7 +195,7 @@ const Experience = () => {
                         <PatchCheckFill className='experience-details-icon'/>
                         <div>
                             <h4>Python for <br /> Data Science</h4>
-                            <small></small>
+                            <small>Intermedio</small>
                         </div>
                     </article>
                 </div>
