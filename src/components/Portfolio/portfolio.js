@@ -21,7 +21,7 @@ const data = [
         site: 'http://www.tafkaplayer.it',
         cover: img2,
         desc: "Un weplayer che permette una sola riproduzione della canzone",
-        hasSite: true,
+        hasSite: false,
         hasGithub: true,
     },
     {
